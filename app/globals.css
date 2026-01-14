@@ -26,6 +26,7 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-DMSans: 'DMSans', serif;
+  --font-blosta: 'blosta'
 }
 
 body {
@@ -38,6 +39,14 @@ body {
 @font-face {
   font-family: 'DMSans';
   src: url('/fonts/DMSans.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'blosta';
+  src: url('/fonts/BLOSTA.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
