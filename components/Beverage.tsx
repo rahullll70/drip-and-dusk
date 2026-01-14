@@ -53,9 +53,7 @@ const Beverage = () => {
               {/* Image Placeholder - Centered */}
               <div className='w-40 h-48 my-4 flex items-center justify-center relative'>
                 {/* <img src="" alt={item.name} className="object-contain w-full h-full" /> */}
-                <div className='absolute inset-0 border border-dashed border-light-bronze/10 rounded-lg flex items-center justify-center text-[10px] uppercase tracking-widest text-foreground/20 font-mono'>
-                  Img Area
-                </div>
+                <img src={`/images/beverage_${item}.png`} alt="" />
               </div>
 
               {/* Product Info */}
