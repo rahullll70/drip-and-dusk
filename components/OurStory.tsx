@@ -34,7 +34,7 @@ const OurStory = () => {
           className="space-y-12 text-foreground font-sans tracking-tight"
         >
           <p className="text-xl md:text-2xl leading-relaxed font-medium">
-            At Drip & Dusk, we believe coffee is more than a drink — <br />
+            At Drip & Dusk, we believe coffee is more than a drink  <br />
             it's a moment. A pause. A soft breath between the rush <br />
             of the day and the calm of the evening. <br />
             Our café was created for people who love slow <br />
@@ -53,7 +53,7 @@ const OurStory = () => {
           <p className="text-lg md:text-xl leading-relaxed opacity-80 max-w-2xl mx-auto">
             Whether you're here to work, unwind, meet a friend, or <br />
             escape the noise, Drip & Dusk is your corner of comfort <br />
-            — where good coffee meets good vibes.
+             where good coffee meets good vibes.
           </p>
 
           {/* Final Call with small icon */}

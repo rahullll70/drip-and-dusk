@@ -56,7 +56,7 @@ export const VisitUs = () => {
         </div>
 
         {/* Illustration Map Side */}
-        <div className='order-1 lg:order-2 relative bg-foreground/5 p-4 rounded-full aspect-square flex items-center justify-center overflow-hidden'>
+        <div className='order-1 lg:order-2 relative bg-foreground/15 p-4 rounded-full aspect-square flex items-center justify-center overflow-hidden'>
           {/* Background Decorative Rings */}
           <div className='absolute inset-0 border border-light-bronze/10 rounded-full scale-90' />
           <div className='absolute inset-0 border border-light-bronze/5 rounded-full scale-75' />

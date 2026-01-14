@@ -56,7 +56,7 @@ const Hero = () => {
       <div className="absolute bottom-0 w-full bg-foreground py-4 border-t border-cornsilk/10 z-20 overflow-hidden">
         <div className="flex whitespace-nowrap animate-marquee">
           {[...Array(10)].map((_, i) => (
-            <span key={i} className="font-thorin italic text-cornsilk text-xl mx-12 opacity-80">
+            <span key={i} className="font-blosta  text-cornsilk text-xl mx-12 opacity-80 tracking-widest">
               Drip & Dusk
             </span>
           ))}

@@ -6,7 +6,6 @@ import Footer from '@/components/Footer';
 import Hero from '@/components/Hero';
 import { BrewingGuide } from '@/components/BrewingGuide';
 import { VisitUs } from '@/components/VisitUs';
-import { Roastery } from '@/components/Roastery';
 
 const page = () => {
   return (
@@ -15,7 +14,7 @@ const page = () => {
       <Hero />
       <Beverage />
       <OurStory />
-      <Roastery />
+
       <BrewingGuide />
       <VisitUs />
       <Footer />

@@ -24,7 +24,7 @@ const Beverage = () => {
     <section className='bg-background py-20 mt-20 px-4 md:px-12'>
       <div className='max-w-7xl mx-auto'>
         {/* Section Header based on your image */}
-        <div className='text-center mb-16 space-y-2'>
+        <div className='text-center mb-16 space-y-2 '>
           <h4 className='text-[10px] uppercase tracking-[0.5em] text-foreground/40 font-mono'>
             FEATURED
           </h4>
@@ -32,17 +32,20 @@ const Beverage = () => {
             Products
           </h2>
           <div className='w-24 h-px bg-light-bronze mx-auto mt-4 opacity-30' />
+          
         </div>
+        
 
-        {/* The Grid - using 1px gap on a light-bronze background to create thin borders */}
+        {/* The Grid -  */}
+        
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-light-bronze/30 border border-light-bronze/30'>
           {products.map((item) => (
             <div
               key={item.id}
-              className='bg-background p-6 flex flex-col items-center group hover:bg-beige/30 transition-colors duration-500'
+              className='bg-background p-8 flex flex-col items-center group hover:bg-beige/30 transition-colors duration-500 min-h-[480px]'
             >
-              {/* Heart Icon Top Right */}
-              <div className='w-full flex justify-end'>
+              {/* 1. Heart Icon */}
+              <div className='w-full flex justify-end mb-4'>
                 <Heart
                   size={18}
                   strokeWidth={1}
@@ -50,24 +53,31 @@ const Beverage = () => {
                 />
               </div>
 
-              {/* Image Placeholder - Centered */}
-              <div className='w-40 h-48 my-4 flex items-center justify-center relative'>
-                {/* <img src="" alt={item.name} className="object-contain w-full h-full" /> */}
-                <img src={`/images/beverage_${item}.png`} alt="" />
+              {/* 2. Constrained Image Container - This fixes the "Too Big" issue */}
+              <div className='flex-grow flex items-center justify-center w-full'>
+                <div className='relative h-32 w-32 md:h-40 md:w-40 flex items-center justify-center'>
+                  <img
+                    src={`/images/beverage_${item.id}.png`}
+                    alt={item.name}
+                    loading='lazy'
+                    className='max-h-full max-w-full object-contain transform group-hover:scale-110 transition-transform duration-500'
+                  />
+                </div>
               </div>
 
-              {/* Product Info */}
-              <div className='w-full text-center space-y-4'>
-                <h3 className='font-sans text-sm tracking-tight text-foreground font-medium uppercase'>
+              {/* 3. Product Info & Action Bar */}
+              <div className='w-full mt-8 flex flex-col items-center'>
+                {/* Product Name - Direct positioning under image */}
+                <h3 className='font-sans text-[13px] tracking-[0.2em] text-foreground font-semibold uppercase text-center mb-10'>
                   {item.name}
                 </h3>
 
-                {/* Price and Order Button Bar */}
-                <div className='flex items-center justify-between border border-foreground/10 rounded-sm overflow-hidden mt-6'>
-                  <span className='flex-1 text-[12px] font-mono text-foreground/60 px-3 py-2 text-left bg-foreground/5'>
+                {/* Action Bar (Price + Button) - Perfect alignment at bottom */}
+                <div className='w-full flex items-center border border-foreground/10 rounded-sm overflow-hidden'>
+                  <span className='w-[35%] text-[11px] font-mono text-foreground/60 px-2 py-3 bg-foreground/5 border-r border-foreground/10 text-center'>
                     {item.price}
                   </span>
-                  <button className='flex-1 cursor-pointer bg-foreground text-background text-[10px] font-bold uppercase tracking-wider py-2 px-4 hover:bg-light-bronze transition-colors'>
+                  <button className='w-[65%] cursor-pointer bg-[#1a1a1a] text-background text-[10px] font-bold uppercase tracking-widest py-3 px-4 hover:bg-light-bronze transition-colors'>
                     Order Now
                   </button>
                 </div>
