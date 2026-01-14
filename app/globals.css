@@ -1,26 +1,44 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Your primary light theme background */
+  --background: #fefae0;
+  --foreground: #2c2420;
+
+  /* Your Warm Palette Variables */
+  --tea-green: #ccd5ae;
+  --beige: #e9edc9;
+  --cornsilk: #fefae0;
+  --papaya-whip: #faedcd;
+  --light-bronze: #d4a373;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+
+  --color-tea-green: var(--tea-green);
+  --color-beige: var(--beige);
+  --color-cornsilk: var(--cornsilk);
+  --color-papaya-whip: var(--papaya-whip);
+  --color-light-bronze: var(--light-bronze);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-DMSans: 'DMSans', serif;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  transition: background-color 0.5s ease;
+}
+
+@font-face {
+  font-family: 'DMSans';
+  src: url('/fonts/DMSans.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
