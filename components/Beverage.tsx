@@ -21,7 +21,7 @@ const products = [
 
 const Beverage = () => {
   return (
-    <section className='bg-background py-20 px-4 md:px-12'>
+    <section className='bg-background py-20 mt-20 px-4 md:px-12'>
       <div className='max-w-7xl mx-auto'>
         {/* Section Header based on your image */}
         <div className='text-center mb-16 space-y-2'>

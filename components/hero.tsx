@@ -1,13 +1,18 @@
 import React from 'react'
 
-const hero = () => {
+
+const Hero = () => {
   return (
     <div className='h-screen w-full'>
-      <div>
-        <video src=""></video>
+      <div className=' w-full h-screen'>
+        <video src="/videos/hero_video.mp4" 
+        autoPlay
+        muted
+        loop
+        />
       </div>
     </div>
   )
 }
 
-export default hero
+export default Hero
