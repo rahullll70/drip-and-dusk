@@ -1,11 +1,12 @@
 import React from 'react';
-import Navbar from '../components/navbar';
+
 import Beverage from '@/components/Beverage';
 import OurStory from '@/components/OurStory';
 import Footer from '@/components/Footer';
 import Hero from '@/components/Hero';
 import { BrewingGuide } from '@/components/BrewingGuide';
 import { VisitUs } from '@/components/VisitUs';
+import Navbar from '@/components/navbar';
 
 const page = () => {
   return (
@@ -14,7 +15,6 @@ const page = () => {
       <Hero />
       <Beverage />
       <OurStory />
-
       <BrewingGuide />
       <VisitUs />
       <Footer />
