@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+git mv components/hero.tsx components/Hero.tsx
+git mv components/navbar.tsx components/Navbar.tsx
