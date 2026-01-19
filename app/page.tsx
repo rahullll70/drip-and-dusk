@@ -6,7 +6,7 @@ import Footer from '@/components/Footer';
 import Hero from '@/components/Hero';
 import BrewingGuide from '@/components/BrewingGuide';
 import VisitUs from '@/components/VisitUs';
-import Navbar from '@/components/navbar';
+import Navbar from '@/components/Navbar';
 
 
 const page = () => {
