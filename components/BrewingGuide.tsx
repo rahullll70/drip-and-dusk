@@ -42,7 +42,7 @@ const guides = [
   }
 ];
 
-export const BrewingGuide = () => {
+ const BrewingGuide = () => {
   return (
     <section className="bg-background py-32 px-6 md:px-12 border-t border-light-bronze/10">
       <div className="max-w-7xl mx-auto">
@@ -120,3 +120,5 @@ export const BrewingGuide = () => {
     </section>
   );
 };
+
+export default BrewingGuide;

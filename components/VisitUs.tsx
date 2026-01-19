@@ -4,7 +4,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { MapPin, Clock, Phone, Navigation } from 'lucide-react';
 
-export const VisitUs = () => {
+const VisitUs = () => {
   return (
     <section className='bg-background py-32 px-6 md:px-12'>
       <div className='max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center'>
@@ -148,3 +148,5 @@ export const VisitUs = () => {
     </section>
   );
 };
+
+export default VisitUs
