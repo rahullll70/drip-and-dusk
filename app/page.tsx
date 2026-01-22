@@ -8,7 +8,6 @@ import BrewingGuide from '@/components/BrewingGuide';
 import VisitUs from '@/components/VisitUs';
 import Navbar from '@/components/Navbar';
 
-
 const page = () => {
   return (
     <div>
