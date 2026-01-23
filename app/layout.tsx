@@ -16,6 +16,30 @@ export const metadata: Metadata = {
   title: 'Drip. & Dusk.',
   description:
     "Elevated essentials for the modern transition. Explore curated collections where street-inspired 'drip' meets the elegance of the 'dusk'.",
+
+  openGraph: {
+    title: 'Drip. & Dusk.',
+    description: 'Elevated essentials for the modern transition.',
+    url: 'https://drip-and-dusk.vercel.app/',
+    siteName: 'Drip. & Dusk.',
+    images: [
+      {
+        url: 'https://drip-and-dusk.vercel.app/icon.png',
+        width: 1200,
+        height: 630,
+        alt: 'Drip & Dusk Collection Preview',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Drip. & Dusk.',
+    description: 'Elevated essentials for the modern transition.',
+    images: ['https://drip-and-dusk.vercel.app/icon.png'],
+  },
 };
 
 export default function RootLayout({
